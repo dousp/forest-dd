@@ -1,7 +1,7 @@
 package com.dtflys.test.converter.entity;
 
 
-import javax.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.*;
 import java.util.List;
 
 /**

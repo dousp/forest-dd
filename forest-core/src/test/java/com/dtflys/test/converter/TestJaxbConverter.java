@@ -5,7 +5,7 @@ import com.dtflys.forest.converter.xml.ForestJaxbConverter;
 import com.dtflys.forest.exceptions.ForestRuntimeException;
 import org.junit.Test;
 
-import javax.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.*;
 
 import static junit.framework.Assert.*;
 

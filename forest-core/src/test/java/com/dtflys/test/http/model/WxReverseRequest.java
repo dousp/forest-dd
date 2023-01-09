@@ -1,6 +1,6 @@
 package com.dtflys.test.http.model;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 
 /**
  * 微信撤销订单请求
