@@ -2,7 +2,6 @@ package com.dtflys.test.mock;
 
 import org.apache.http.HttpHeaders;
 import org.mockserver.client.MockServerClient;
-import org.mockserver.integration.ClientAndServer;
 import org.mockserver.junit.MockServerRule;
 import org.mockserver.model.Header;
 

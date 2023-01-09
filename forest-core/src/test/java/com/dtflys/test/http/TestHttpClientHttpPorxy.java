@@ -5,7 +5,6 @@ import com.dtflys.forest.annotation.HTTPProxy;
 import com.dtflys.forest.backend.HttpBackend;
 import com.dtflys.forest.config.ForestConfiguration;
 import okhttp3.mockwebserver.MockWebServer;
-import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;

@@ -1,13 +1,11 @@
 package com.dtflys.test.proxy;
 
 import com.dtflys.forest.config.ForestConfiguration;
-import com.dtflys.test.http.client.GetClient;
 import com.dtflys.forest.proxy.ProxyFactory;
+import com.dtflys.test.http.client.GetClient;
 import org.junit.Test;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.*;
 
 /**
  * @author gongjun[jun.gong@thebeastshop.com]

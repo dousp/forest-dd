@@ -5,7 +5,6 @@ import com.dtflys.forest.converter.protobuf.ForestGoogleProtobufConverter;
 import com.dtflys.test.converter.protobuf.ProtobufProto;
 import org.apache.http.HttpHeaders;
 import org.mockserver.client.MockServerClient;
-import org.mockserver.integration.ClientAndServer;
 import org.mockserver.junit.MockServerRule;
 import org.mockserver.model.Header;
 

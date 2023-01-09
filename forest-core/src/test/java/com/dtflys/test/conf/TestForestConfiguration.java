@@ -4,16 +4,12 @@ import com.dtflys.forest.backend.HttpBackend;
 import com.dtflys.forest.backend.HttpBackendSelector;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.converter.ForestConverter;
+import com.dtflys.forest.converter.json.*;
 import com.dtflys.forest.exceptions.ForestRuntimeException;
 import com.dtflys.forest.ssl.SSLUtils;
 import com.dtflys.forest.utils.ForestDataType;
 import com.dtflys.forest.utils.RequestNameValue;
 import junit.framework.Assert;
-import com.dtflys.forest.converter.json.JSONConverterSelector;
-import com.dtflys.forest.converter.json.ForestFastjsonConverter;
-import com.dtflys.forest.converter.json.ForestGsonConverter;
-import com.dtflys.forest.converter.json.ForestJacksonConverter;
-import com.dtflys.forest.converter.json.ForestJsonConverter;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -26,10 +22,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import static com.dtflys.forest.mapping.MappingParameter.TARGET_BODY;
 import static com.dtflys.forest.mapping.MappingParameter.TARGET_HEADER;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 /**
  * @author gongjun[jun.gong@thebeastshop.com]

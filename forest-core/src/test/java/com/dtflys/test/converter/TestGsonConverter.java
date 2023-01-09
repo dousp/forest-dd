@@ -1,16 +1,11 @@
 package com.dtflys.test.converter;
 
-import com.dtflys.forest.converter.json.ForestFastjsonConverter;
-import com.dtflys.forest.converter.json.ForestJacksonConverter;
-import com.dtflys.test.http.model.Cause;
-import com.dtflys.test.http.model.FormListParam;
-import com.dtflys.test.model.Coordinate;
-import com.dtflys.test.model.SubCoordinate;
-import com.google.common.collect.Lists;
-import com.google.gson.reflect.TypeToken;
-import junit.framework.Assert;
 import com.dtflys.forest.converter.json.ForestGsonConverter;
 import com.dtflys.forest.exceptions.ForestRuntimeException;
+import com.dtflys.test.model.Coordinate;
+import com.dtflys.test.model.SubCoordinate;
+import com.google.gson.reflect.TypeToken;
+import junit.framework.Assert;
 import org.junit.Test;
 
 import java.text.DateFormat;
@@ -21,9 +16,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.*;
 
 /**
  * @author gongjun[jun.gong@thebeastshop.com]

@@ -3,7 +3,6 @@ package com.dtflys.test.converter;
 import com.alibaba.fastjson.TypeReference;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.converter.auto.DefaultAutoConverter;
-import com.dtflys.forest.converter.xml.ForestJaxbConverter;
 import com.dtflys.forest.utils.ForestDataType;
 import org.junit.Test;
 
@@ -11,7 +10,8 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
-import static junit.framework.Assert.*;
+import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
 
 /**
  * @author gongjun[dt_flys@hotmail.com]

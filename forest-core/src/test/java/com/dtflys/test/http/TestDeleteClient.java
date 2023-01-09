@@ -2,10 +2,10 @@ package com.dtflys.test.http;
 
 import com.dtflys.forest.backend.HttpBackend;
 import com.dtflys.forest.config.ForestConfiguration;
+import com.dtflys.test.http.client.DeleteClient;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import org.apache.http.HttpHeaders;
-import com.dtflys.test.http.client.DeleteClient;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;

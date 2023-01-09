@@ -5,7 +5,7 @@ import com.dtflys.forest.interceptor.Interceptor;
 import com.dtflys.spring.test.component.ComponentA;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 @Component
 public class InterceptorA implements Interceptor<String> {

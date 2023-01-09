@@ -2,7 +2,6 @@ package com.dtflys.test.http;
 
 import com.dtflys.forest.Forest;
 import com.dtflys.forest.backend.httpclient.response.HttpclientForestResponseFactory;
-import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.handler.LifeCycleHandler;
 import com.dtflys.forest.http.ForestRequest;
 import com.dtflys.forest.http.ForestResponse;

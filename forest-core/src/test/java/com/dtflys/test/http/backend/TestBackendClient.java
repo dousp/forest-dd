@@ -4,7 +4,6 @@ import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.http.ForestRequest;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
-import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 

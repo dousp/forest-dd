@@ -1,7 +1,8 @@
 package com.dtflys.test.converter;
 
 import com.dtflys.forest.config.ForestConfiguration;
-import com.dtflys.forest.converter.json.ForestFastjsonConverter;
+import com.dtflys.forest.converter.json.ForestJacksonConverter;
+import com.dtflys.forest.exceptions.ForestRuntimeException;
 import com.dtflys.forest.utils.ReflectUtils;
 import com.dtflys.test.http.model.Cause;
 import com.dtflys.test.http.model.FormListParam;
@@ -11,22 +12,14 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import junit.framework.Assert;
-import com.dtflys.forest.converter.json.ForestJacksonConverter;
-import com.dtflys.forest.exceptions.ForestRuntimeException;
 import org.junit.Test;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.*;
 
 /**
  * @author gongjun[dt_flys@hotmail.com]

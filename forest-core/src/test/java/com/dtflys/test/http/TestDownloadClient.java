@@ -2,8 +2,6 @@ package com.dtflys.test.http;
 
 import com.dtflys.forest.Forest;
 import com.dtflys.forest.backend.HttpBackend;
-import com.dtflys.forest.backend.httpclient.HttpclientBackend;
-import com.dtflys.forest.backend.okhttp3.OkHttp3Backend;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.forest.utils.ForestProgress;
@@ -17,12 +15,7 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;

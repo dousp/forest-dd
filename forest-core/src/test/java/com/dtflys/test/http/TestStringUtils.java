@@ -1,14 +1,11 @@
 package com.dtflys.test.http;
 
 import com.dtflys.forest.utils.StringUtils;
-import com.dtflys.forest.utils.StringUtils;
 import org.junit.Test;
 
 import java.lang.reflect.Method;
 
-import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertFalse;
-import static junit.framework.Assert.assertTrue;
+import static junit.framework.Assert.*;
 
 /**
  * @author gongjun[jun.gong@thebeastshop.com]

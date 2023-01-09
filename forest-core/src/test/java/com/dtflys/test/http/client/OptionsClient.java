@@ -1,7 +1,8 @@
 package com.dtflys.test.http.client;
 
-import com.dtflys.forest.annotation.*;
-import com.dtflys.forest.http.ForestResponse;
+import com.dtflys.forest.annotation.DataParam;
+import com.dtflys.forest.annotation.Options;
+import com.dtflys.forest.annotation.OptionsRequest;
 import com.dtflys.forest.annotation.Request;
 import com.dtflys.forest.http.ForestResponse;
 

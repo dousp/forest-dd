@@ -1,9 +1,9 @@
 package com.dtflys.test.mapping;
 
-import junit.framework.Assert;
 import com.dtflys.forest.mapping.MappingReference;
 import com.dtflys.forest.mapping.MappingVariable;
 import com.dtflys.forest.reflection.ForestMethod;
+import junit.framework.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 

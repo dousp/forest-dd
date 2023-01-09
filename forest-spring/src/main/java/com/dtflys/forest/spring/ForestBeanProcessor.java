@@ -50,10 +50,10 @@ public class ForestBeanProcessor implements InstantiationAwareBeanPostProcessor 
         return true;
     }
 
-    @Override
-    public PropertyValues postProcessPropertyValues(PropertyValues pvs, PropertyDescriptor[] pds, Object bean, String beanName) throws BeansException {
-        return pvs;
-    }
+    // @Override
+    // public PropertyValues postProcessPropertyValues(PropertyValues pvs, PropertyDescriptor[] pds, Object bean, String beanName) throws BeansException {
+    //     return pvs;
+    // }
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {

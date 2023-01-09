@@ -2,7 +2,6 @@ package com.dtflys.test.reflection;
 
 import com.dtflys.forest.callback.SuccessWhen;
 import com.dtflys.forest.config.ForestConfiguration;
-import com.dtflys.forest.reflection.ObjectConstructor;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

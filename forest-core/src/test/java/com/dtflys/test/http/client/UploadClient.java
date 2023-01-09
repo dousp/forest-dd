@@ -1,17 +1,9 @@
 package com.dtflys.test.http.client;
 
-import com.dtflys.forest.annotation.BaseRequest;
-import com.dtflys.forest.annotation.Body;
-import com.dtflys.forest.annotation.DataFile;
-import com.dtflys.forest.annotation.JSONBody;
-import com.dtflys.forest.annotation.LogEnabled;
-import com.dtflys.forest.annotation.Post;
-import com.dtflys.forest.annotation.PostRequest;
-import com.dtflys.forest.annotation.Request;
+import com.dtflys.forest.annotation.*;
 import com.dtflys.forest.backend.ContentType;
 import com.dtflys.forest.callback.OnProgress;
 import com.dtflys.forest.http.ForestRequest;
-import org.bouncycastle.math.raw.Mod;
 
 import java.io.File;
 import java.io.InputStream;

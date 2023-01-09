@@ -1,21 +1,12 @@
 package com.dtflys.test.http;
 
-import cn.hutool.core.bean.BeanUtil;
-import cn.hutool.core.bean.copier.CopyOptions;
-import cn.hutool.core.lang.Editor;
 import com.alibaba.fastjson.JSON;
 import com.dtflys.forest.backend.ContentType;
 import com.dtflys.forest.backend.HttpBackend;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.http.ForestRequest;
-import com.dtflys.forest.mock.MockServerRequest;
-import com.dtflys.forest.multipart.ByteArrayMultipart;
-import com.dtflys.forest.multipart.FileMultipart;
-import com.dtflys.forest.multipart.FilePathMultipart;
-import com.dtflys.forest.multipart.ForestMultipart;
-import com.dtflys.forest.multipart.InputStreamMultipart;
+import com.dtflys.forest.multipart.*;
 import com.dtflys.forest.utils.StringUtils;
-import com.dtflys.test.converter.TestJaxbConverter;
 import com.dtflys.test.http.client.UploadClient;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
@@ -31,22 +22,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.function.Consumer;
 
 import static com.dtflys.forest.mock.MockServerRequest.mockRequest;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.Assert.assertArrayEquals;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 
 public class TestUploadClient extends BaseClientTest {

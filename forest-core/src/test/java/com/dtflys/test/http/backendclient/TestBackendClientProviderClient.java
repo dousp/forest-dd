@@ -1,9 +1,7 @@
 package com.dtflys.test.http.backendclient;
 
-import com.dtflys.forest.Forest;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.http.ForestRequest;
-import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.test.http.retry.TestRetryInterceptor;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
@@ -11,7 +9,6 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 

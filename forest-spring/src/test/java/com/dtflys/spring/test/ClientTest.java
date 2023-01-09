@@ -8,7 +8,7 @@ import junit.framework.TestCase;
 import com.dtflys.spring.test.client0.BeastshopClient;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 

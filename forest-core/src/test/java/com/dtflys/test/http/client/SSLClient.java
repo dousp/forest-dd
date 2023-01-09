@@ -1,12 +1,6 @@
 package com.dtflys.test.http.client;
 
-import com.dtflys.forest.annotation.BaseRequest;
-import com.dtflys.forest.annotation.DataVariable;
-import com.dtflys.forest.annotation.Get;
-import com.dtflys.forest.annotation.Query;
-import com.dtflys.forest.annotation.Request;
-import com.dtflys.forest.annotation.SSLHostnameVerifier;
-import com.dtflys.forest.annotation.SSLSocketFactoryBuilder;
+import com.dtflys.forest.annotation.*;
 import com.dtflys.forest.http.ForestRequest;
 import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.test.http.ssl.MyHostnameVerifier;

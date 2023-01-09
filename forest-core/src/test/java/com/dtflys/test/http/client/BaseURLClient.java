@@ -3,8 +3,6 @@ package com.dtflys.test.http.client;
 import com.dtflys.forest.annotation.BaseURL;
 import com.dtflys.forest.annotation.Get;
 import com.dtflys.forest.annotation.Request;
-import com.dtflys.forest.annotation.BaseURL;
-import com.dtflys.forest.annotation.Request;
 
 /**
  * @author gongjun[jun.gong@thebeastshop.com]

@@ -4,17 +4,9 @@ import com.dtflys.forest.backend.HttpBackend;
 import com.dtflys.forest.backend.httpclient.HttpclientBackend;
 import com.dtflys.forest.backend.okhttp3.OkHttp3Backend;
 import com.dtflys.forest.config.ForestConfiguration;
-import com.dtflys.forest.backend.HttpBackend;
-import com.dtflys.forest.backend.httpclient.HttpclientBackend;
-import com.dtflys.forest.backend.okhttp3.OkHttp3Backend;
-import com.dtflys.forest.config.ForestConfiguration;
 import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.Collection;

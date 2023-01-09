@@ -1,7 +1,5 @@
 package com.dtflys.test.http.model;
 
-import com.alibaba.fastjson.annotation.JSONField;
-
 import java.io.Serializable;
 import java.util.Date;
 

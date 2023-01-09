@@ -1,14 +1,12 @@
 package com.dtflys.forest.springboot.test.async;
 
-import ch.qos.logback.core.joran.conditional.ThenOrElseActionBase;
 import com.dtflys.forest.Forest;
 import com.dtflys.forest.annotation.BindingVar;
 import com.dtflys.forest.backend.AsyncHttpExecutor;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.exceptions.ForestAsyncAbortException;
-import com.dtflys.forest.http.ForestRequest;
 import com.dtflys.forest.springboot.test.address.TestAddress;
-import com.dtflys.forest.springboot.test.binding.BindingVarClient;
+import jakarta.annotation.Resource;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import org.junit.Rule;
@@ -20,11 +18,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resource;
-
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
-import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.TimeUnit;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;

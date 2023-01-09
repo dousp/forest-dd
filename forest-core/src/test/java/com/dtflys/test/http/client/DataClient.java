@@ -2,10 +2,6 @@ package com.dtflys.test.http.client;
 
 import com.dtflys.forest.annotation.DataParam;
 import com.dtflys.forest.annotation.Request;
-import com.dtflys.forest.annotation.DataParam;
-import com.dtflys.forest.annotation.DataVariable;
-import com.dtflys.forest.annotation.Request;
-import com.dtflys.forest.callback.OnSuccess;
 
 import java.util.Map;
 

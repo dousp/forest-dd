@@ -17,7 +17,6 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import static com.dtflys.forest.mock.MockServerRequest.mockRequest;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.assertj.core.api.AssertionsForClassTypes.fail;
 
 /**
  * @author gongjun[dt_flys@hotmail.com]

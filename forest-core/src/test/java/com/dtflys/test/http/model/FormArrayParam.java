@@ -2,8 +2,6 @@ package com.dtflys.test.http.model;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
-import java.util.List;
-
 public class FormArrayParam {
 
     @JSONField(ordinal = 1)

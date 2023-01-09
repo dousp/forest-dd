@@ -5,7 +5,6 @@ import com.dtflys.forest.annotation.BaseRequest;
 import com.dtflys.forest.annotation.Post;
 import com.dtflys.forest.annotation.Redirection;
 import com.dtflys.forest.callback.OnRedirection;
-import com.dtflys.forest.callback.OnSuccess;
 import com.dtflys.forest.http.ForestResponse;
 
 @Address(host = "localhost", port = "${port}")

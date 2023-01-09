@@ -4,18 +4,15 @@ import com.alibaba.fastjson.JSON;
 import com.dtflys.forest.Forest;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.converter.json.ForestJacksonConverter;
-import com.dtflys.forest.converter.json.ForestJsonConverter;
-import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.test.http.client.AmapClient;
-import com.dtflys.test.model.*;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import com.dtflys.test.model.Coordinate;
+import com.dtflys.test.model.Location;
+import com.dtflys.test.model.Result;
+import com.dtflys.test.model.SubCoordinate;
 
-import java.util.List;
 import java.util.Map;
 
 import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
 
 public class TestAmapClient {
 

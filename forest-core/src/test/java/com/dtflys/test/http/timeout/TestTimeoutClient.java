@@ -7,7 +7,6 @@ import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.test.http.BaseClientTest;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
-import okhttp3.mockwebserver.SocketPolicy;
 import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;

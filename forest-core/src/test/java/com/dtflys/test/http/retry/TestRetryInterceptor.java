@@ -1,7 +1,6 @@
 package com.dtflys.test.http.retry;
 
 import com.dtflys.forest.http.ForestRequest;
-import com.dtflys.forest.http.ForestRequestType;
 import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.forest.interceptor.Interceptor;
 

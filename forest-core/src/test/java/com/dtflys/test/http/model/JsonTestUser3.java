@@ -1,7 +1,6 @@
 package com.dtflys.test.http.model;
 
 import com.alibaba.fastjson.annotation.JSONField;
-import com.dtflys.forest.annotation.NotNull;
 
 public class JsonTestUser3 extends JsonTestUser {
 

@@ -1,6 +1,8 @@
 package com.dtflys.test.http.gzip;
 
-import com.dtflys.forest.annotation.*;
+import com.dtflys.forest.annotation.BaseRequest;
+import com.dtflys.forest.annotation.DecompressGzip;
+import com.dtflys.forest.annotation.Get;
 import com.dtflys.forest.http.ForestResponse;
 
 /**

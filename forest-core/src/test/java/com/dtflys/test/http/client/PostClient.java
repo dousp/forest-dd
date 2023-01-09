@@ -5,8 +5,6 @@ import com.dtflys.forest.backend.ContentType;
 import com.dtflys.forest.http.ForestRequest;
 import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.test.http.model.*;
-import com.dtflys.test.http.model.UserParam;
-import com.dtflys.test.http.model.XmlTestParam;
 import com.dtflys.test.interceptor.PostHeadInterceptor;
 import com.dtflys.test.interceptor.XmlResponseInterceptor;
 

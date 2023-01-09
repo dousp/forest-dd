@@ -1,16 +1,16 @@
 package com.dtflys.test.misc;
 
 import com.alibaba.fastjson.TypeReference;
-import com.fasterxml.jackson.databind.JavaType;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.reflect.TypeToken;
-import junit.framework.TestCase;
 import com.dtflys.forest.converter.json.ForestFastjsonConverter;
 import com.dtflys.forest.converter.json.ForestGsonConverter;
 import com.dtflys.forest.converter.json.ForestJacksonConverter;
 import com.dtflys.test.model.Contact;
 import com.dtflys.test.model.Location;
 import com.dtflys.test.model.Result;
+import com.fasterxml.jackson.databind.JavaType;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.reflect.TypeToken;
+import junit.framework.TestCase;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;

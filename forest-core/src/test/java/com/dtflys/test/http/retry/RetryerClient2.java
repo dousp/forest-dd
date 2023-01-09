@@ -5,7 +5,6 @@ import com.dtflys.forest.annotation.Retry;
 import com.dtflys.forest.annotation.Retryer;
 import com.dtflys.forest.http.ForestRequest;
 import com.dtflys.forest.retryer.BackOffRetryer;
-import com.dtflys.forest.retryer.NoneRetryer;
 
 @Retryer(TestRetryer.class)
 @Retry(maxRetryCount = "${0}")

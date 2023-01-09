@@ -2,8 +2,6 @@ package com.dtflys.test.http.client;
 
 import com.dtflys.forest.annotation.*;
 import com.dtflys.forest.http.ForestResponse;
-import com.dtflys.forest.annotation.Request;
-import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.test.model.TestHeaders;
 
 import java.util.Map;

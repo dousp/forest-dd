@@ -3,10 +3,10 @@ package com.dtflys.test.proxy;
 import com.dtflys.forest.annotation.BaseURL;
 import com.dtflys.forest.annotation.Request;
 import com.dtflys.forest.config.ForestConfiguration;
-import com.dtflys.forest.reflection.MetaRequest;
-import com.dtflys.test.http.client.GetClient;
 import com.dtflys.forest.proxy.InterfaceProxyHandler;
 import com.dtflys.forest.proxy.ProxyFactory;
+import com.dtflys.forest.reflection.MetaRequest;
+import com.dtflys.test.http.client.GetClient;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;

@@ -7,7 +7,7 @@ import com.dtflys.forest.logging.ResponseLogMessage;
 import com.dtflys.forest.utils.StringUtils;
 import com.dtflys.spring.test.component.ComponentA;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 public class TestLogHandler extends DefaultLogHandler {
 

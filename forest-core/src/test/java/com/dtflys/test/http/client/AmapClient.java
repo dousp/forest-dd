@@ -7,10 +7,7 @@ import com.dtflys.forest.annotation.Request;
 import com.dtflys.forest.converter.json.ForestJacksonConverter;
 import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.test.model.*;
-import com.dtflys.test.model.Coordinate;
-import com.dtflys.test.model.Result;
 
-import java.math.BigDecimal;
 import java.util.Map;
 
 /**

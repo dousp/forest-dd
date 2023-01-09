@@ -1,7 +1,5 @@
 package com.dtflys.test.model;
 
-import java.math.BigDecimal;
-
 /**
  * @author gongjun
  * @since  2016-06-01

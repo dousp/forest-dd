@@ -1,7 +1,5 @@
 package com.dtflys.test.converter;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.io.Serializable;
 import java.util.Date;
 

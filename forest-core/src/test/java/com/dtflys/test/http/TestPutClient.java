@@ -5,7 +5,9 @@ import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.test.http.client.PutClient;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
-import org.junit.*;
+import org.junit.BeforeClass;
+import org.junit.Rule;
+import org.junit.Test;
 
 import static com.dtflys.forest.mock.MockServerRequest.mockRequest;
 import static org.assertj.core.api.Assertions.assertThat;

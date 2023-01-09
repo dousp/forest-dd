@@ -10,9 +10,9 @@ import com.dtflys.forest.http.ForestRequest;
 import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.forest.http.ForestURL;
 import com.dtflys.forest.utils.TypeReference;
+import com.dtflys.test.http.client.GetClient;
 import com.dtflys.test.http.client.UrlEncodedClient;
 import com.dtflys.test.http.model.JsonTestUser;
-import com.dtflys.test.http.client.GetClient;
 import com.dtflys.test.model.TokenResult;
 import com.google.common.collect.Lists;
 import okhttp3.mockwebserver.MockResponse;
@@ -27,17 +27,14 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import static com.dtflys.forest.mock.MockServerRequest.mockRequest;
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.entry;
 import static org.junit.Assert.assertNotNull;
 
 /**

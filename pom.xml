@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<groupId>com.dtflys.forest</groupId>
 	<artifactId>forest</artifactId>
-		<version>1.5.29-BETA3</version>
+	<version>1.5.29-BETA3</version>
 	<packaging>pom</packaging>
 	<name>forest</name>
 	<description>A easy HTTP client framework for Java</description>
@@ -35,46 +34,60 @@
 	</scm>
 
 	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<spring.version>5.3.20</spring.version>
-		<spring-boot.version>2.6.8</spring-boot.version>
+		<!-- jdk -->
+		<java.version>17</java.version>
+		<jakarta.annotation-api.version>2.1.1</jakarta.annotation-api.version>
+		<!-- kotlin -->
+		<kotlin.version>1.6.20</kotlin.version>
+		<!-- <kotlin.version>1.8.0</kotlin.version> -->
+		<kotlinx.version>1.6.4</kotlinx.version>
+		<!-- spring -->
+		<spring.version>6.0.3</spring.version>
+		<spring-boot.version>3.0.1</spring-boot.version>
+
 		<common-io.version>2.7</common-io.version>
 		<commons-fileupload.version>1.3.3</commons-fileupload.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-lang3.version>3.9</commons-lang3.version>
 		<juniversalchardet.version>1.0.3</juniversalchardet.version>
 		<jsr305.version>3.0.1</jsr305.version>
-		<fastjson.version>1.2.83</fastjson.version>
-		<jackson.version>2.13.3</jackson.version>
-		<jackson-databind.version>2.13.3</jackson-databind.version>
-		<jackson-annotations.version>2.13.3</jackson-annotations.version>
-		<gson.version>2.8.9</gson.version>
 		<xercesImpl.version>2.12.2</xercesImpl.version>
-		<slf4j.version>1.7.10</slf4j.version>
-		<log4j.version>2.13.3</log4j.version>
 		<okhttp.version>3.14.9</okhttp.version>
 		<httpcore.version>4.4.14</httpcore.version>
-		<httpclient.version>4.5.13</httpclient.version>
+		<httpclient.version>4.5.14</httpclient.version>
+		<!-- upgrade -->
+		<hutool-all.version>5.8.11</hutool-all.version>
+		<fastjson.version>1.2.83</fastjson.version>
+		<jackson.version>2.13.3</jackson.version>
+		<gson.version>2.8.9</gson.version>
+		<protobuf.version>3.16.1</protobuf.version>
+		<byte-buddy.version>1.12.3</byte-buddy.version>
+		<log4j.version>2.19.0</log4j.version>
+		<slf4j.version>2.0.5</slf4j.version>
+		<logback.version>1.4.5</logback.version>
 
 		<mockwebserver.version>3.14.9</mockwebserver.version>
 		<mockserver-netty.version>5.4.1</mockserver-netty.version>
 		<mockito.version>4.5.1</mockito.version>
 		<junit.version>4.13.2</junit.version>
 		<moco-core.version>1.2.0</moco-core.version>
-		<spring-boot-starter-test.version>2.5.12</spring-boot-starter-test.version>
 
-		<maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
-		<maven-source-plugin.version>2.1.2</maven-source-plugin.version>
-		<maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
 		<cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
 		<nexus-staging-maven-plugin.version>1.6.3</nexus-staging-maven-plugin.version>
-		<spring-boot-maven-plugin.version>2.0.1.RELEASE</spring-boot-maven-plugin.version>
-		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+
+		<!-- 这几个插件跟springboot3.0.1保持一致 -->
+		<spring-boot-maven-plugin.version>3.0.1</spring-boot-maven-plugin.version>
+		<maven-deploy-plugin.version>3.0.0</maven-deploy-plugin.version>
+		<maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+		<maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+		<maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
+		<!-- 这个待研究 -->
 		<maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
-		<protobuf.version>3.16.1</protobuf.version>
 	</properties>
 
 	<modules>
@@ -85,6 +98,7 @@
 	</modules>
 
 	<dependencies>
+
 		<!-- mockito -->
 		<dependency>
 			<groupId>org.mockito</groupId>
@@ -211,7 +225,7 @@
 		<dependency>
 			<groupId>org.assertj</groupId>
 			<artifactId>assertj-core</artifactId>
-			<version>3.13.2</version>
+			<version>3.23.1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -222,11 +236,10 @@
 			<scope>test</scope>
 		</dependency>
 
-
 		<dependency>
 			<groupId>cn.hutool</groupId>
 			<artifactId>hutool-all</artifactId>
-			<version>5.5.2</version>
+			<version>${hutool-all.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -234,6 +247,14 @@
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-starter-web</artifactId>
@@ -252,20 +273,90 @@
 			</dependency>
 
 			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-test</artifactId>
-				<version>${spring-boot-starter-test.version}</version>
-				<scope>test</scope>
+				<groupId>jakarta.annotation</groupId>
+				<artifactId>jakarta.annotation-api</artifactId>
+				<version>${jakarta.annotation-api.version}</version>
 			</dependency>
 
 			<dependency>
-				<!-- Import dependency management from Spring Boot -->
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>${spring-boot.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-java</artifactId>
+				<version>${protobuf.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-java-util</artifactId>
+				<version>${protobuf.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>net.bytebuddy</groupId>
+				<artifactId>byte-buddy</artifactId>
+				<version>${byte-buddy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>net.bytebuddy</groupId>
+				<artifactId>byte-buddy-agent</artifactId>
+				<version>${byte-buddy.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-core</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-annotations</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>${gson.version}</version>
+			</dependency>
+
+			<!-- log4j2 -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>jcl-over-slf4j</artifactId>
+				<version>${slf4j.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-core</artifactId>
+				<version>${log4j.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>${log4j.version}</version>
+				<scope>test</scope>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 
@@ -289,22 +380,27 @@
 							<encoding>UTF-8</encoding>
 						</configuration>
 					</execution>
-					<execution>
-						<id>test-compile</id>
-						<phase>test-compile</phase>
-						<goals>
-							<goal>testCompile</goal>
-						</goals>
-						<configuration>
-							<fork>true</fork>
-							<compilerArgs>
-								<arg>-parameters</arg>
-							</compilerArgs>
-							<source>${maven.compiler.source}</source>
-							<target>${maven.compiler.target}</target>
-						</configuration>
-					</execution>
+					<!-- <execution> -->
+					<!-- 	<id>test-compile</id> -->
+					<!-- 	<phase>test-compile</phase> -->
+					<!-- 	<goals> -->
+					<!-- 		<goal>testCompile</goal> -->
+					<!-- 	</goals> -->
+					<!-- 	<configuration> -->
+					<!-- 		<fork>true</fork> -->
+					<!-- 		<compilerArgs> -->
+					<!-- 			<arg>-parameters</arg> -->
+					<!-- 		</compilerArgs> -->
+					<!-- 		<source>${maven.compiler.source}</source> -->
+					<!-- 		<target>${maven.compiler.target}</target> -->
+					<!-- 	</configuration> -->
+					<!-- </execution> -->
 				</executions>
+				<configuration>
+					<source>${maven.compiler.source}</source>
+					<target>${maven.compiler.target}</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -337,12 +433,11 @@
 		</repository>
 	</distributionManagement>
 
-
 	<profiles>
 		<profile>
 			<id>disable-javadoc-doclint</id>
 			<activation>
-				<jdk>[1.8,)</jdk>
+				<jdk>[17,)</jdk>
 			</activation>
 			<properties>
 				<additionalparam>-Xdoclint:none</additionalparam>

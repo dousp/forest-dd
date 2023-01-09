@@ -12,8 +12,6 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
-import static junit.framework.Assert.assertNotNull;
-import static junit.framework.Assert.assertTrue;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 /**

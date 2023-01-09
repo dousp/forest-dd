@@ -1,7 +1,6 @@
 package com.dtflys.test.http.encoder;
 
 import com.dtflys.forest.converter.ForestEncoder;
-import com.dtflys.forest.converter.json.ForestJacksonConverter;
 import com.dtflys.forest.http.ForestBody;
 import com.dtflys.forest.http.ForestRequestBody;
 import com.dtflys.forest.http.body.ObjectRequestBody;

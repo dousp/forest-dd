@@ -7,11 +7,6 @@ import com.dtflys.forest.http.ForestRequest;
 import com.dtflys.forest.http.ForestResponse;
 import com.dtflys.test.ErrorClient;
 import junit.framework.TestCase;
-import com.dtflys.forest.config.ForestConfiguration;
-import com.dtflys.forest.http.ForestRequest;
-import com.dtflys.forest.callback.OnError;
-import com.dtflys.forest.exceptions.ForestRuntimeException;
-import com.dtflys.forest.http.ForestResponse;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

@@ -1,11 +1,6 @@
 package com.dtflys.test.http.client;
 
-import com.dtflys.forest.annotation.BinaryBody;
-import com.dtflys.forest.annotation.Body;
-import com.dtflys.forest.annotation.DataFile;
-import com.dtflys.forest.annotation.LogEnabled;
-import com.dtflys.forest.annotation.Post;
-import com.dtflys.forest.annotation.Var;
+import com.dtflys.forest.annotation.*;
 import com.dtflys.forest.backend.ContentType;
 
 import java.io.File;

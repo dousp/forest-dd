@@ -2,8 +2,6 @@ package com.dtflys.test;
 
 import com.dtflys.forest.annotation.Request;
 import com.dtflys.forest.callback.OnError;
-import com.dtflys.forest.annotation.Request;
-import com.dtflys.forest.callback.OnError;
 import com.dtflys.forest.http.ForestResponse;
 
 /**

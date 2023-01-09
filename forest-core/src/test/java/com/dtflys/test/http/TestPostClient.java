@@ -11,16 +11,7 @@ import com.dtflys.forest.logging.RequestLogMessage;
 import com.dtflys.forest.utils.Base64Utils;
 import com.dtflys.test.http.client.EmptyJsonClient;
 import com.dtflys.test.http.client.PostClient;
-import com.dtflys.test.http.model.Cause;
-import com.dtflys.test.http.model.FormArrayParam;
-import com.dtflys.test.http.model.FormListParam;
-import com.dtflys.test.http.model.JsonTestList;
-import com.dtflys.test.http.model.JsonTestUser;
-import com.dtflys.test.http.model.JsonTestUser2;
-import com.dtflys.test.http.model.JsonTestUser3;
-import com.dtflys.test.http.model.JsonTestUser4;
-import com.dtflys.test.http.model.UserParam;
-import com.dtflys.test.http.model.XmlTestParam;
+import com.dtflys.test.http.model.*;
 import com.google.common.collect.Lists;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
@@ -28,20 +19,13 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.Mockito;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static com.dtflys.forest.mock.MockServerRequest.mockRequest;
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * @author gongjun[jun.gong@thebeastshop.com]

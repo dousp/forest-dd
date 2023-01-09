@@ -6,7 +6,7 @@ import com.dtflys.spring.test.component.ComponentA;
 import com.dtflys.spring.test.component.ComponentB;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
+import jakarta.annotation.Resource;
 
 /**
  * @author gongjun[dt_flys@hotmail.com]

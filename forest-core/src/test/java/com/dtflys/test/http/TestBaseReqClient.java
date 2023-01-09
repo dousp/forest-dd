@@ -4,7 +4,6 @@ import com.dtflys.forest.backend.HttpBackend;
 import com.dtflys.forest.config.ForestConfiguration;
 import com.dtflys.forest.http.ForestRequest;
 import com.dtflys.forest.http.ForestResponse;
-import com.dtflys.forest.interceptor.Interceptor;
 import com.dtflys.test.http.client.BaseReqClient;
 import com.dtflys.test.http.client.BaseURLClient;
 import com.dtflys.test.http.client.BaseURLVarClient;

@@ -1,7 +1,7 @@
 package com.dtflys.test.interceptor;
 
-import com.dtflys.forest.interceptor.DefaultInterceptorFactory;
 import com.dtflys.forest.annotation.Request;
+import com.dtflys.forest.interceptor.DefaultInterceptorFactory;
 
 /**
  * @author gongjun[jun.gong@thebeastshop.com]

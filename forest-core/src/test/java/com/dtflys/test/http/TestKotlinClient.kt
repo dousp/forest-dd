@@ -1,11 +1,6 @@
 package com.dtflys.test.http
 
-import com.dtflys.forest.annotation.Address
-import com.dtflys.forest.annotation.Body
-import com.dtflys.forest.annotation.Get
-import com.dtflys.forest.annotation.JSONBody
-import com.dtflys.forest.annotation.Post
-import com.dtflys.forest.annotation.Query
+import com.dtflys.forest.annotation.*
 import com.dtflys.forest.backend.HttpBackend
 import com.dtflys.forest.callback.OnSuccess
 import com.dtflys.forest.config.ForestConfiguration

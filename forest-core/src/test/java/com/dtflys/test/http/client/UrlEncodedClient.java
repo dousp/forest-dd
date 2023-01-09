@@ -1,10 +1,6 @@
 package com.dtflys.test.http.client;
 
-import com.dtflys.forest.annotation.BaseRequest;
-import com.dtflys.forest.annotation.Get;
-import com.dtflys.forest.annotation.Post;
-import com.dtflys.forest.annotation.Query;
-import com.dtflys.forest.annotation.URLEncode;
+import com.dtflys.forest.annotation.*;
 
 @BaseRequest(baseURL = "http://localhost:${port}")
 public interface UrlEncodedClient {
